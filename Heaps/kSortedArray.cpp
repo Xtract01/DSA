@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<iostream>
 #include <queue>
 using namespace std;
@@ -21,4 +22,29 @@ int main(){
     for(int i=0;i<ans.size();i++){
         cout<<ans[i]<<" ";
     }
+=======
+#include<iostream>
+#include <queue>
+using namespace std;
+int main(){
+    int arr[] = {6,5,3,2,8,10,9};
+    int k = 3;
+    int n = sizeof(arr)/4;
+    priority_queue<int,vector<int>,greater<int>> pq;
+    vector<int> ans;
+    for(int i=0;i<n;i++){
+        pq.push(arr[i]);
+        if(pq.size()>k){
+            ans.push_back(pq.top());
+            pq.pop();
+        }
+    }
+    while(pq.size()>0){
+        ans.push_back(pq.top());
+        pq.pop();
+    }
+    for(int i=0;i<ans.size();i++){
+        cout<<ans[i]<<" ";
+    }
+>>>>>>> b218f4bcb23e0b44d0ac0a8c543ca629d035929c
 }
