@@ -6,6 +6,10 @@
     "scminput": false
   },
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "algorithm": "cpp",
+    "iosfwd": "cpp",
+    "random": "cpp",
+    "cmath": "cpp"
   }
 }

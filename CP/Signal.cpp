@@ -30,7 +30,17 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        // Solve each test case here
+        int n ;
+        cin>>n;
+        string s;
+        cin>>s;
+        bool flag = false;
+        int ans = 0;
+        for(int i = 0 ; i< n ; i++){
+            if(s[i]=='0' && flag == false) flag = true;
+            if(flag==true && s[i]=='1') ans++;
+        }
+        cout<<ans<<endl;
     }
     return 0;
 }

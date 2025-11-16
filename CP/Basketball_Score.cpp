@@ -26,11 +26,8 @@ const double PI = acos(-1.0);
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-
-    int t;
-    cin >> t;
-    while (t--) {
-        // Solve each test case here
-    }
+    int x,y;
+    cin>>x>>y;
+    cout<<x*3 + y*2<<endl;
     return 0;
 }

@@ -30,7 +30,20 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        // Solve each test case here
+        int n;
+        cin >> n;
+        vector<int> arr(n);
+        for(int i=0 ;i< n ; i++){
+            cin>>arr[i];
+        }
+        vector<int> vec = arr;
+        vector<int> vec1 = arr;
+        sort(vec.begin(),vec.end());
+        sort(vec1.rbegin(),vec1.rend());
+        if(vec==arr || vec1==arr){
+            cout<<0<<endl;
+        }
+        else cout<<n-2<<endl;
     }
     return 0;
 }
